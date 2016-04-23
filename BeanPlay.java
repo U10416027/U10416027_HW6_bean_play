@@ -147,7 +147,7 @@ public class BeanPlay extends Application{
 		Circle c16 = new Circle(225, 95, 6);
 		group.getChildren().add(c16);
 		
-		Scene scene = new Scene(group, 300, 400);
+		Scene scene = new Scene(group, 280, 380);
 		primaryStage.setTitle("打彈珠");
 		primaryStage.setScene(scene);
 		primaryStage.setResizable(false);
