@@ -12,13 +12,13 @@ public class BeanPlay extends Application{
 	public void start(Stage primaryStage){
 		Group group = new Group();
 		
-		Button btn = new Button("開始遊戲");
-		btn.setMinSize(25, 25);
-		btn.setTranslateX(235);
-		btn.setTranslateY(0);
-		group.getChildren().add(btn);
+		Label lb = new Label("丟球:空白鍵");
+		lb.setMinSize(25, 25);
+		lb.setTranslateX(220);
+		lb.setTranslateY(0);
+		group.getChildren().add(lb);
 		
-		Line a1 = new Line(15, 360, 300, 390);
+		Line a1 = new Line(15, 350, 265, 350);
 		group.getChildren().add(a1);
 		
 		Line a2 = new Line(265, 70, 265, 350);
@@ -30,7 +30,7 @@ public class BeanPlay extends Application{
 		Line a4 = new Line(200, 45, 265, 70);
 		group.getChildren().add(a4);
 		
-		Line a5 = new Line(15, 70, 15, 360);
+		Line a5 = new Line(15, 70, 15, 350);
 		group.getChildren().add(a5);
 		
 		Line a6 = new Line(50, 250, 50, 330);
@@ -69,85 +69,83 @@ public class BeanPlay extends Application{
 		Circle c56 = new Circle(225, 235, 6);
 		group.getChildren().add(c56);
 		
-		Circle c41 = new Circle(35, 200, 4);
+		Circle c41 = new Circle(35, 200, 6);
 		group.getChildren().add(c41);
 		
-		Circle c42 = new Circle(70, 200, 4);
+		Circle c42 = new Circle(70, 200, 6);
 		group.getChildren().add(c42);
 		
-		Circle c43 = new Circle(105, 200, 4);
+		Circle c43 = new Circle(105, 200, 6);
 		group.getChildren().add(c43);
 		
-		Circle c44 = new Circle(140, 200, 4);
+		Circle c44 = new Circle(140, 200, 6);
 		group.getChildren().add(c44);
 		
-		Circle c45 = new Circle(175, 200, 4);
+		Circle c45 = new Circle(175, 200, 6);
 		group.getChildren().add(c45);
 		
-		Circle c46 = new Circle(210, 200, 4);
+		Circle c46 = new Circle(210, 200, 6);
 		group.getChildren().add(c46);
 		
-		Circle c47 = new Circle(245, 200, 4);
+		Circle c47 = new Circle(245, 200, 6);
 		group.getChildren().add(c47);
 		
-		Circle c31 = new Circle(50, 165, 4);
+		Circle c31 = new Circle(50, 165, 6);
 		group.getChildren().add(c31);
 		
-		Circle c32 = new Circle(85, 165, 4);
+		Circle c32 = new Circle(85, 165, 6);
 		group.getChildren().add(c32);
 		
-		Circle c33 = new Circle(120, 165, 4);
+		Circle c33 = new Circle(120, 165, 6);
 		group.getChildren().add(c33);
 		
-		Circle c34 = new Circle(155, 165, 4);
+		Circle c34 = new Circle(155, 165, 6);
 		group.getChildren().add(c34);
 		
-		Circle c35 = new Circle(190, 165, 4);
+		Circle c35 = new Circle(190, 165, 6);
 		group.getChildren().add(c35);
 		
-		Circle c36 = new Circle(225, 165, 4);
+		Circle c36 = new Circle(225, 165, 6);
 		group.getChildren().add(c36);
 		
-		Circle c21 = new Circle(35, 130, 4);
+		Circle c21 = new Circle(35, 130, 6);
 		group.getChildren().add(c21);
 		
-		Circle c22 = new Circle(70, 130, 4);
+		Circle c22 = new Circle(70, 130, 6);
 		group.getChildren().add(c22);
 		
-		Circle c23 = new Circle(105, 130, 4);
+		Circle c23 = new Circle(105, 130, 6);
 		group.getChildren().add(c23);
 		
-		Circle c24 = new Circle(140, 130, 4);
+		Circle c24 = new Circle(140, 130, 6);
 		group.getChildren().add(c24);
 		
-		Circle c25 = new Circle(175, 130, 4);
+		Circle c25 = new Circle(175, 130, 6);
 		group.getChildren().add(c25);
 		
-		Circle c26 = new Circle(210, 130, 4);
+		Circle c26 = new Circle(210, 130, 6);
 		group.getChildren().add(c26);
 		
-		Circle c27 = new Circle(245, 130, 4);
+		Circle c27 = new Circle(245, 130, 6);
 		group.getChildren().add(c27);
 		
-		Circle c11 = new Circle(50, 95, 5);
+		Circle c11 = new Circle(50, 95, 6);
 		group.getChildren().add(c11);
 		
-		Circle c12 = new Circle(85, 95, 5);
+		Circle c12 = new Circle(85, 95, 6);
 		group.getChildren().add(c12);
 		
-		Circle c13 = new Circle(120, 95, 5);
+		Circle c13 = new Circle(120, 95, 6);
 		group.getChildren().add(c13);
 		
-		Circle c14 = new Circle(155, 95, 5);
+		Circle c14 = new Circle(155, 95, 6);
 		group.getChildren().add(c14);
 		
-		Circle c15 = new Circle(190, 95, 5);
+		Circle c15 = new Circle(190, 95, 6);
 		group.getChildren().add(c15);
 		
-		Circle c16 = new Circle(225, 95, 5);
+		Circle c16 = new Circle(225, 95, 6);
 		group.getChildren().add(c16);
-		
-		
 		
 		Scene scene = new Scene(group, 300, 400);
 		primaryStage.setTitle("打彈珠");
