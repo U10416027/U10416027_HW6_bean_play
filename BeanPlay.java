@@ -14,7 +14,7 @@ public class BeanPlay extends Application{
 		
 		Label lb = new Label("丟球:空白鍵");
 		lb.setMinSize(25, 25);
-		lb.setTranslateX(220);
+		lb.setTranslateX(210);
 		lb.setTranslateY(0);
 		group.getChildren().add(lb);
 		
