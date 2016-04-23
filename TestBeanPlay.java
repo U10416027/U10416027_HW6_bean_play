@@ -3,6 +3,6 @@ import javafx.application.Application;
 public class TestBeanPlay{
 	public static void main(String[] args){
 		//call the subclass
-		launch(BeanPlay.class, args);
+		Application.launch(BeanPlay.class, args);
 	}
 }
