@@ -1,12 +1,17 @@
+//U10416027	董郡麟
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.shape.*;
-import javafx.scene.paint.*;
-import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.scene.control.*;
-import javafx.scene.text.*;
 import javafx.scene.Group;
+import javafx.scene.input.KeyCode;
+import java.util.Random;
+import javafx.animation.*;
+import javafx.util.Duration;
 
 public class BeanPlay extends Application{
 	public void start(Stage primaryStage){
@@ -152,5 +157,34 @@ public class BeanPlay extends Application{
 		primaryStage.setScene(scene);
 		primaryStage.setResizable(false);
 		primaryStage.show();
+		
+		//input key event
+		scene.setOnKeyPressed(e -> {
+			Paint[] c = {Color.BLUE,Color.RED,Color.GRAY,Color.BROWN,Color.BLACK,Color.GREEN,Color.ORANGE};
+			int[] setX = {-105, -70, -35, 0, 35, 70, 105};
+			
+			//when enter SPACE will run
+			if (e.getCode() == KeyCode.SPACE) {
+				Timeline timeline = new Timeline();
+				Random random = new Random();
+				int x = 140;
+				int y = 30;
+				
+				//choose the last position of the ball
+				int choose =  random.nextInt(7);
+				int chooseX = random.nextInt(7);
+				Circle ball = new Circle(x, y, 6, (Paint)c[choose]);
+				group.getChildren().add(ball);
+				
+				//move the ball
+				timeline.getKeyFrames().addAll
+				(new KeyFrame(new Duration(700),
+				new KeyValue(ball.translateXProperty(),setX[chooseX]),
+				new KeyValue(ball.translateYProperty(),310))
+				);
+				
+				timeline.play();
+			}
+		});
 	}
 }
